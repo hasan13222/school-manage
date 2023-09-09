@@ -1,0 +1,99 @@
+
+.swiper {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+  
+    /* Center slide text vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .swiper-button-prev {
+    color: #fff;
+    background-color: #990232;
+    padding: 2.5rem;
+    border-radius: 50%;
+    left: 10%;
+}
+
+.swiper-button-prev:after {
+    font-size: 2rem;
+}
+  .swiper-button-next {
+    color: #fff;
+    background-color: #990232;
+    padding: 2.5rem;
+    border-radius: 50%;
+    right: 10%;
+}
+
+.swiper-button-next:after {
+    font-size: 2rem;
+}
+
+/* hero foot cards */
+.school-intro {
+  margin-top: 7rem;
+}
+
+.hero__foot__cards__item {
+  background-color: #990232;
+  display: flex;
+  gap: 1.6rem;
+  padding: 4rem;
+  padding-right: 6rem;
+  color: #fff;
+}
+
+.hero__foot__cards {
+  gap: 1px;
+  margin-top: -7rem;
+  position: relative;
+  z-index: 1;
+}
+
+.hero__foot__cards__item .card-icon svg {
+  font-size: 5rem;
+  color: #fff;
+}
+
+.hero__foot__cards__item h3 {
+  font-size: 1.9rem;
+  margin-bottom: 0.6rem;
+}
+
+.hero__foot__cards__item p {
+  color: #ffecec;
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 1099px) {
+  .hero__foot__cards__item{
+    padding: 2rem;
+    padding-right: 4rem;
+  }
+}
+
+/* Medium devices (landscape mobile, 458px and up) */
+@media only screen and (max-width: 767px) {
+  .hero__foot__cards{
+    flex-wrap: wrap;
+  }
+  .hero__foot__cards__item{
+    width: 100%;
+  }
+}

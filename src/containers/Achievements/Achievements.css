@@ -1,0 +1,64 @@
+.achievement__section__right {
+    align-self: flex-end;
+    flex-wrap: wrap;
+}
+
+.achievement__section__right .achievement_item {
+    width: 45%;
+    align-items: center;
+    padding: 2.5rem 3rem;
+    border: 1px solid #666666;
+    border-radius: 3px;
+}
+.achievement {
+    background-color: rgb(32, 44, 69);
+    color: #fff;
+    padding: 3rem 0;
+    padding-bottom: 6rem;
+    margin-top: 6rem;
+}
+
+.achievement__section__right .achievement_item svg {
+    font-size: 4rem;
+    color: #ffed00;
+}
+
+.achievement__section__right .achievement_item span.number {
+    font-size: 3rem;
+    font-weight: bold;
+}
+.achievement__section__right .achievement_item .bar {
+    margin: 0 auto;
+    width: 10rem;
+    height: 2px;
+    background-color: #fff200;
+}
+.achievement__section__item {
+    width: 47%;
+}
+
+.achievement__section__left img {
+    width: 100%;
+}
+
+.achievement__section__left .section-head {
+    margin-bottom: 3rem;
+}
+
+/* Medium devices (landscape mobile, 458px and up) */
+@media only screen and (max-width: 767px) {
+    .achievement__section {
+        flex-wrap: wrap;
+        gap: 3rem;
+      }
+    .achievement__section__item {
+        width: 100%;
+      }
+      .achievement__section__left .section-head{
+        margin-bottom: 3rem;
+        margin-top: 2rem;
+      }
+      .achievement__section__left .img_wrapper{
+        padding: 2rem;
+      }
+  }

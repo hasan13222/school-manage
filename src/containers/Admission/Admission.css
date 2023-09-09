@@ -1,0 +1,74 @@
+.admission {
+    margin: 5rem 0;
+}
+
+.admission__section h2 {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
+.admission__section__item {
+    border: 1px solid gainsboro;
+    margin-bottom: 2rem;
+    border-radius: 3px;
+}
+
+.admission__section__item h3 {
+    background-color: #eeeeee;
+    padding: 8px;
+    border-bottom: 1px solid gainsboro;
+}
+
+.admission__section__item h3 + p {
+    padding: 8px;
+}
+
+.admission__section__item__inputs {
+    padding: 8px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.admission__section__item__inputs__item select, .admission__section__item__inputs__item input::placeholder {
+    font-size: 1.2rem;
+}
+
+.admission__section__item__inputs__item input {
+    font-size: 1.2rem;
+    display: block;
+    width: 20rem;
+    border: 1px solid gainsboro;
+    border-radius: 2rem;
+    padding: 0.7rem 1.4rem;
+    margin-top: 5px;
+}
+
+.admission__section__item__inputs__item label span.red {
+    color: #ff0b0b;
+}
+
+.admission__section__item__inputs__item select {
+    display: block;
+    padding: 0.6rem 1rem;
+    border: 1px solid gainsboro;
+    color: #474747;
+    border-radius: 2rem;
+    width: 20rem;
+    margin-top: 5px;
+}
+
+.admission__section__item__inputs__item label {
+    font-size: 1.3rem;
+    padding-left: 0.5rem;
+}
+
+.admission__section__item__inputs__item {
+    max-width: 30rem;
+}
+.admission__section__documents__inputs__item {
+    max-width: 100%;
+}
+.admission__section__item__inputs__item .border_danger{
+    border: 2px solid rgb(232, 9, 9);
+}

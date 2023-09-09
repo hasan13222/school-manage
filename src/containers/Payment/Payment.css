@@ -1,0 +1,70 @@
+.payment {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f4f4;
+}
+
+.payment__card {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 3px;
+    overflow: auto;
+    min-width: 300px;
+    width: 360px;
+}
+
+.payment__card h2 {
+    font-size: 2rem;
+    margin-bottom: 1.3rem;
+}
+
+.payment__card label {
+    display: block;
+    font-weight: 600;
+    color: #181818;
+    margin-bottom: 6px;
+}
+
+.payment__card input {
+    width: 100%;
+    padding: 1rem;
+    border: none;
+    box-shadow: 0 0 2px #a3a3a3;
+    margin-bottom: 15px;
+    border-radius: 2px;
+}
+
+.card__number__wrapper {
+    position: relative;
+}
+
+.card__number__wrapper svg {
+    position: absolute;
+    right: 8px;
+    bottom: 0.9rem;
+    font-size: 2rem;
+    color: #7388ad;
+}
+
+.cardDate_cvcNum {
+    display: flex;
+}
+
+
+input.card__number {
+    margin-bottom: 0;
+}
+
+.payment input[type="submit"] {
+    cursor: pointer;
+    background-color: #302e2e;
+    color: #fff;
+    border-radius: 4px;
+}
+
+.payment input[type="submit"]:hover {
+    background-color: black;
+}

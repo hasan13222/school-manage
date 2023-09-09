@@ -1,0 +1,103 @@
+.login__sidebar {
+  background: url(../../assets/images/login-bg.png) no-repeat;
+  background-size: cover;
+  background-position: left center;
+}
+
+.login.lp {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+}
+.login__main {
+  flex: 4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+}
+.login__sidebar {
+  flex: 6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+.login__main__section {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.login__main__section button {
+  border-radius: 3px;
+  box-shadow: none;
+  background-color: #c81650;
+}
+.login__main__section > div {
+  position: relative;
+}
+.login__main__section input {
+  padding: 0.7rem 1rem;
+  border: 1px solid gainsboro;
+}
+.login__main__section svg {
+  position: absolute;
+  right: 10px;
+  top: 11px;
+  color: gray;
+}
+.login__main__forget {
+  display: flex;
+  gap: 8rem;
+}
+.login__main__forget a {
+  font-size: 1.2rem;
+  text-decoration: underline;
+}
+
+/* sidebar */
+
+.login__sidebar__section__news__item p {
+  width: 320px;
+  height: 20px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.login__sidebar__section__news {
+  background-color: #000000a3;
+  padding: 3.5rem 5.5rem;
+  border-radius: 5px;
+}
+.login__sidebar__section h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2.2rem;
+}
+.login__sidebar__section__news__item {
+  border-bottom: 1px solid gainsboro;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+}
+.login__sidebar__section__news__item a {
+  color: #bfa724;
+  font-size: 1.2rem;
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 1099px) {
+  .login__sidebar__section__news__item p {
+    width: 300px;
+  }
+  .login__sidebar__section__news {
+    padding: 3.5rem;
+  }
+}
+
+/* Medium devices (landscape tablets, 458 and up) */
+@media only screen and (max-width: 767px) {
+  .login__sidebar {
+    display: none;
+  }
+}

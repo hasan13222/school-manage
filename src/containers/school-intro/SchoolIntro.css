@@ -1,0 +1,8 @@
+.school-intro {
+    margin-top: 7rem;
+}
+.school-intro__section .intro img {
+    width: 100%;
+    max-height: 40rem;
+    object-fit: cover;
+}

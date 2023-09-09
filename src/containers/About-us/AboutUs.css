@@ -1,0 +1,50 @@
+.about {
+  padding: 5rem 0;
+}
+.about .about_top .flex-1 {
+  flex: 1;
+}
+.about .about_us_img img {
+  width: 100%;
+}
+
+.about_top .flex-1 {
+  flex: 1;
+}
+
+.about h3 {
+  font-size: 2.3rem;
+}
+
+.about p {
+  margin-top: 2rem;
+}
+
+.about_us_desc__item {
+  margin-top: 3rem;
+}
+
+.about_top {
+  margin-bottom: 6rem;
+}
+
+.about_btm__item p {
+  text-align: justify;
+  padding-right: 3rem;
+}
+
+/* Medium devices (landscape mobile, 458px and up) */
+@media only screen and (max-width: 767px) {
+  .about {
+    padding-top: 0;
+  }
+  .about_top {
+    flex-wrap: wrap;
+  }
+  .about_top .flex-1 {
+    min-width: 100%;
+  }
+  .about_btm {
+    flex-wrap: wrap;
+  }
+}/*# sourceMappingURL=AboutUs.css.map */

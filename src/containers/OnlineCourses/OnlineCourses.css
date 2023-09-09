@@ -1,0 +1,248 @@
+.oncrs__section__top {
+  padding-top: 5rem;
+  padding-bottom: 1.3rem;
+  border-bottom: 1px solid gainsboro;
+  margin-bottom: 2rem;
+  align-items: flex-end;
+}
+.oncrs__section__top--left {
+  flex: 2;
+}
+.oncrs__section__top--right {
+  flex: 8;
+  display: flex;
+  justify-content: flex-end;
+}
+.oncrs__section__top--left > div {
+  display: flex;
+  gap: 3px;
+  align-items: center;
+  cursor: pointer;
+}
+.oncrs__section__top--right button {
+  border-right: 1px solid gainsboro;
+  border-radius: 0;
+  padding: 1rem 1.4rem;
+  background: transparent;
+  box-shadow: none;
+  color: #333;
+}
+.oncrs__section__top--right .btns {
+  border: 1px solid gainsboro;
+  border-right: none;
+  border-radius: 3px;
+}
+.oncrs__section__top--right button.price_sort svg {
+  padding-top: 3px;
+  padding-left: 3px;
+}
+
+/* online courses main body */
+.oncrs__section__body__sidebar {
+  flex: 2 1;
+  min-width: 23rem;
+}
+.oncrs__section__body__main {
+  flex: 8;
+}
+
+/* sidebar */
+
+.oncrs__section__body__sidebar__item__top {
+  border-bottom: 1px solid gainsboro;
+  padding-bottom: 8px;
+  margin-bottom: 9px;
+}
+.oncrs__section__body__sidebar__item {
+  box-shadow: 0 0 10px gainsboro;
+  margin: 2px;
+  border-radius: 3px;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.oncrs__section__body__sidebar--category__body__single label,
+.oncrs__section__body__sidebar--price__body__single label,
+.oncrs__section__body__sidebar--rating__body__single label {
+  margin-left: 8px;
+}
+.oncrs__section__body__sidebar--category__body__single,
+.oncrs__section__body__sidebar--price__body__single,
+.oncrs__section__body__sidebar--rating__body__single {
+  margin-bottom: 6px;
+}
+
+.oncrs__section__body__sidebar--search__body__single input {
+  border: 1px solid gainsboro;
+  padding: 4px;
+  padding-left: 0.7rem;
+  width: 93%;
+}
+.oncrs__section__body__sidebar--search__body__single svg {
+  background-color: #eaeaea;
+  width: 2rem;
+  height: 2.8rem;
+  padding: 4px 6px;
+}
+.oncrs__section__body__sidebar--range__body__single input {
+  width: 40%;
+  border: 1px solid gainsboro;
+  padding: 4px;
+  padding-left: 0.7rem;
+}
+.oncrs__section__body__sidebar--range__body__single svg {
+  width: 3rem;
+  height: 2.8rem;
+  background-color: #eaeaea;
+  padding: 4px 6px;
+}
+.oncrs__section__body__sidebar--range__body__single .range_box {
+  width: 93%;
+  justify-content: space-around;
+}
+.oncrs__section__body__sidebar--range__body__single {
+  gap: 5px;
+}
+
+.oncrs__section__body__sidebar--rating__body__single label .fill {
+  color: #ffa500;
+}
+.oncrs__section__body__sidebar--rating__body__single label .blank {
+  color: gainsboro;
+}
+.oncrs__section__body__sidebar--rating__body__single label svg {
+  margin-right: 3px;
+}
+
+/* main section */
+
+.oncrs__section__body__main__item {
+  box-shadow: 0 0 12px gainsboro;
+  margin: 5px;
+  margin-bottom: 2rem;
+}
+.oncrs__section__body__main__item .img_wrapper img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  max-height: 21rem;
+}
+.oncrs__section__body__main__item > div {
+  flex: 1;
+}
+.oncrs__section__body__main__item .dtls {
+  margin: 1rem 5px;
+  border-right: 1px solid gainsboro;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  padding-right: 1rem;
+}
+.oncrs__section__body__main__item .dtls .category .title {
+  font-weight: bold;
+  margin-right: 5px;
+}
+.oncrs__section__body__main__item .dtls .lesson {
+  display: flex;
+  gap: 2rem;
+}
+.oncrs__section__body__main__item .dtls .lesson .item {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.oncrs__section__body__main__item .dtls .lesson .item svg {
+  color: #3c3636;
+}
+.oncrs__section__body__main__item .cart {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem;
+}
+.oncrs__section__body__main__item .cart .btn button {
+  box-shadow: none;
+  padding: 8px 1rem;
+  border-radius: 2px;
+  color: #333;
+  background: transparent;
+  border: 1px solid #d2d2d2;
+}
+.oncrs__section__body__main__item .cart .btn button:hover, .oncrs__section__body__main__item .cart .btn button.clicked {
+  background-color: #d0265c;
+  color: #fff;
+}
+.oncrs__section__body__main__item .cart .btn button svg {
+  margin-right: 4px;
+}
+.oncrs__section__body__main__item .cart .price {
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+  margin: 2rem 0;
+}
+.oncrs__section__body__main__item .cart .price .reg {
+  color: gray;
+  text-decoration: line-through;
+}
+.oncrs__section__body__main__item .cart .price .discount {
+  font-size: 1.6rem;
+}
+.oncrs__section__body__main__item .cart .rating {
+  margin-top: 2rem;
+}
+
+.oncrs__section__body__main__item .cart .rating .fill {
+  color: #ffa500;
+}
+.oncrs__section__body__main__item .cart .rating .blank {
+  color: gainsboro;
+}
+.oncrs__section__body__main__item .cart .rating svg {
+  margin-right: 3px;
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 1099px) {
+  .oncrs__section__body {
+    flex-wrap: wrap;
+  }
+  .oncrs__section__body__main {
+    min-width: 700px;
+  }
+  .oncrs__section__body__sidebar--search__body__single .search_box {
+    width: 100%;
+  }
+}
+
+/* Medium devices (landscape mobile, 458px and up) */
+@media only screen and (max-width: 1099px) {
+  .oncrs__section__top--right {
+    min-width: 300px;
+    justify-content: center;
+    margin-bottom: 2rem;
+    order: 1;
+  }
+  .oncrs__section__top {
+    flex-wrap: wrap;
+  }
+  .oncrs__section__top--left {
+    order: 2;
+  }
+  .oncrs__section__body__main__item {
+    flex-direction: column;
+  }
+  .oncrs__section__body__main {
+    min-width: 100%;
+  }
+  .oncrs__section__body__main__item .dtls {
+    text-align: center;
+  }
+  .oncrs__section__body__main__item .dtls .lesson {
+    justify-content: center;
+  }
+  .oncrs__section__body__main__item .cart .rating {
+    margin: 0;
+  }
+}
