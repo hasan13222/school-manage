@@ -91,7 +91,7 @@ const CommentSection = () => {
           {comments?.map((item) => (
             <div className="comment_item d-flex gap-1">
               <img src={item.proPic ? item.proPic : images.profile1} alt="" />
-              {editMode && commentEditId === item.id ? (
+              {editMode && commentEditId === item._id ? (
                 <CommentEditForm 
                   updateHandler={updateHandler}
                   item={item}

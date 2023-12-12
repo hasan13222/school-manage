@@ -120,7 +120,7 @@ export const admissionReducer = admissionSlice.reducer
 
 export const admissionApi = createApi({
     reducerPath: 'students',
-    baseQuery: fetchBaseQuery({baseUrl: `http://localhost:5000/students`}),
+    baseQuery: fetchBaseQuery({baseUrl: `https://school-management-server-seven.vercel.app/students`}),
     tagTypes: ['students'],
     endpoints: (builder) => ({
         getStudent: builder.query({

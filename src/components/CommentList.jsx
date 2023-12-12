@@ -29,20 +29,20 @@ const CommentList = ({item, getDuration, comments, updateDisLikeCount, updateLik
           className="edit"
           onClick={() => {
             setCommentEdit(!commentEdit);
-            setCommentEditId(item.id);
+            setCommentEditId(item._id);
           }}
         >
           <BsThreeDotsVertical />
           <ul
             className="options"
             style={
-              commentEditId === item.id && commentEdit
+              commentEditId === item._id && commentEdit
                 ? { display: "block" }
                 : { display: "none" }
             }
           >
             <li onClick={() => setEditMode(true)}>Edit</li>
-            <li onClick={() => removeHandler(item.id)}>Delete</li>
+            <li onClick={() => removeHandler(item._id)}>Delete</li>
           </ul>
         </div>
       </div>

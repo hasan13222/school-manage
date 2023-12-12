@@ -6,12 +6,12 @@ export const commentApi = createApi({
     tagTypes: ['comments'],
     endpoints: (builder) => ({
         getAllComments: builder.query({
-            query: () => `http://localhost:5000/comments`,
+            query: () => `https://school-management-server-seven.vercel.app/comments`,
             providesTags: ['comments']
         }),
         createComment: builder.mutation({
             query: (newComment) => ({
-                url: 'http://localhost:5000/comments',
+                url: 'https://school-management-server-seven.vercel.app/comments',
                 method: 'POST',
                 body: newComment
             }),
@@ -20,7 +20,7 @@ export const commentApi = createApi({
         updateComment: builder.mutation({
             query: (editedCmnt) => {
                 return{
-                    url: `http://localhost:5000/comments/${editedCmnt.id}`,
+                    url: `https://school-management-server-seven.vercel.app/comments/${editedCmnt._id}`,
                     method: 'PUT',
                     body: editedCmnt
                 }
@@ -29,10 +29,11 @@ export const commentApi = createApi({
         }),
         deleteComment: builder.mutation({
             query: (id) => ({
-                url: `http://localhost:5000/comments/${id}`,
+                url: `https://school-management-server-seven.vercel.app/comments/${id}`,
                 method: 'DELETE',
             }),
-            invalidatesTags: ['comments']
+            invalidatesTags: ['comments'],
+            transformResponse: (response) => console.log(response)
         })
     })
 })

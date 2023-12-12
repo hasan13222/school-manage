@@ -1,32 +1,37 @@
-import {useState} from "react";
+import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { FaEnvelope } from "react-icons/fa";
 import { BiSolidLockAlt } from "react-icons/bi";
-import {app, database} from '../../firebaseConfig'
+import { app, database } from "../../firebaseConfig";
 import { images } from "../../assets";
 import { posts } from "../../constants/posts";
-import { getAuth, signInWithEmailAndPassword} from 'firebase/auth'
+import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
 import "./Login.css";
 
 const Login = () => {
   const auth = getAuth();
   const navigate = useNavigate();
-  const [data, setData] = useState();
+  const [data, setData] = useState({});
 
   const handleInputs = (e) => {
-    let inputs = {[e.target.name]: e.target.value}
+    let inputs = { [e.target.name]: e.target.value };
 
-        setData({...data, ...inputs});
-  }
+    setData({ ...data, ...inputs });
+  };
   const handleSingin = () => {
-    signInWithEmailAndPassword(auth, data.email, data.password)
+    if (!data.email || !data.password) {
+      alert("Please enter email and password");
+      return;
+    } else {
+      signInWithEmailAndPassword(auth, data.email, data.password)
         .then((response) => {
-          navigate('/')
+          navigate("/");
         })
         .catch((err) => {
-          alert(err.message)
+          alert(err.message);
         });
-  }
+    }
+  };
   return (
     <div className="full-container login lp">
       <div className="login__main">
@@ -37,6 +42,7 @@ const Login = () => {
           <h6>User Login</h6>
           <div className="username">
             <input
+              required
               type="email"
               name="email"
               placeholder="email"
@@ -47,6 +53,7 @@ const Login = () => {
           </div>
           <div className="password">
             <input
+              required
               type="password"
               name="password"
               placeholder="password"

@@ -1,5 +1,5 @@
 import React from "react";
-import { images } from "../../assets";
+// import { images } from "../../assets";
 import "./MyProfile.css";
 import { useGetStudentQuery } from "../../store/reducers/admission";
 
@@ -18,7 +18,7 @@ const MyProfile = () => {
               <div className="profile__sidebar">
                 <div className="profile_intro">
                   <img
-                    src={student.studentPhoto}
+                    src={student.studentPhoto || "https://i.ibb.co/hsWDV8M/R.png"}
                     alt="user"
                   />
                   <div className="profile_intro__dtls">
