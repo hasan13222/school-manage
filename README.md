@@ -1,4 +1,4 @@
-# Electrons Website
+# MCH School Website
 
 ## [Live Link](https://illustrious-sherbet-92583d.netlify.app)
 ## Fetures of the Site
